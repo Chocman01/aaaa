@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/theme_ruine.mp3-10673394a1d5278084652dc442e9ea63.mp3str"
+
+[deps]
+
+source_file="res://resources/theme_ruine.mp3"
+dest_files=[ "res://.import/theme_ruine.mp3-10673394a1d5278084652dc442e9ea63.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

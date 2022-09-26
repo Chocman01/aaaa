@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_shield.mp3-fd5978c38c2b0dd7adf2a124edf91d05.mp3str"
+
+[deps]
+
+source_file="res://resources/sfx_shield.mp3"
+dest_files=[ "res://.import/sfx_shield.mp3-fd5978c38c2b0dd7adf2a124edf91d05.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

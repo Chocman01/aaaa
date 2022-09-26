@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_boss_cac.mp3-adf2a09c43975820bd61df729c4c551c.mp3str"
+
+[deps]
+
+source_file="res://resources/sfx_boss_cac.mp3"
+dest_files=[ "res://.import/sfx_boss_cac.mp3-adf2a09c43975820bd61df729c4c551c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

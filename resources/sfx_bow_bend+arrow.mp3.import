@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_bow_bend+arrow.mp3-3e43e93e3a1c0a6fcf6503e4c80b5729.mp3str"
+
+[deps]
+
+source_file="res://resources/sfx_bow_bend+arrow.mp3"
+dest_files=[ "res://.import/sfx_bow_bend+arrow.mp3-3e43e93e3a1c0a6fcf6503e4c80b5729.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

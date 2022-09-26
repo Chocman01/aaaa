@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Magic Electric 03.wav-64a0265f6d0f7d878e2a695879019c05.sample"
+
+[deps]
+
+source_file="res://resources/FreeSFX/GameSFX/Magic/Retro Magic Electric 03.wav"
+dest_files=[ "res://.import/Retro Magic Electric 03.wav-64a0265f6d0f7d878e2a695879019c05.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

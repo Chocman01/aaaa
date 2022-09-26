@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_trappe_2.mp3-82997787b6ccfb4338791e110bd32b43.mp3str"
+
+[deps]
+
+source_file="res://resources/sfx_trappe_2.mp3"
+dest_files=[ "res://.import/sfx_trappe_2.mp3-82997787b6ccfb4338791e110bd32b43.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

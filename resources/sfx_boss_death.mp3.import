@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_boss_death.mp3-0d4efcfefebd920d585b327961d367b2.mp3str"
+
+[deps]
+
+source_file="res://resources/sfx_boss_death.mp3"
+dest_files=[ "res://.import/sfx_boss_death.mp3-0d4efcfefebd920d585b327961d367b2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

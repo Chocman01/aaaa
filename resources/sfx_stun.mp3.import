@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_stun.mp3-f26e357218828af8f9c62fb5f07ac7d8.mp3str"
+
+[deps]
+
+source_file="res://resources/sfx_stun.mp3"
+dest_files=[ "res://.import/sfx_stun.mp3-f26e357218828af8f9c62fb5f07ac7d8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

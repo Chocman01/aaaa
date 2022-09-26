@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_switch_weapon.mp3-88f4b6b9571e9b3e32844b26a66a7be0.mp3str"
+
+[deps]
+
+source_file="res://resources/sfx_switch_weapon.mp3"
+dest_files=[ "res://.import/sfx_switch_weapon.mp3-88f4b6b9571e9b3e32844b26a66a7be0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

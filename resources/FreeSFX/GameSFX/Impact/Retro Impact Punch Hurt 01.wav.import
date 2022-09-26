@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Impact Punch Hurt 01.wav-ad55733aed3d55a124c2cb9564c8a8cb.sample"
+
+[deps]
+
+source_file="res://resources/FreeSFX/GameSFX/Impact/Retro Impact Punch Hurt 01.wav"
+dest_files=[ "res://.import/Retro Impact Punch Hurt 01.wav-ad55733aed3d55a124c2cb9564c8a8cb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
