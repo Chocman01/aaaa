@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=2]
 
-[ext_resource path="res://scenes/kevin.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Player2/Player2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/platformer_metroidvania asset pack v1.01/tiles and background_foreground (new)/tileset.png" type="Texture" id=2]
 [ext_resource path="res://sprites/platformer_metroidvania asset pack v1.01/tiles and background_foreground (new)/background.png" type="Texture" id=3]
 [ext_resource path="res://scenes/malo.tscn" type="PackedScene" id=4]
