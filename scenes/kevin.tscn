@@ -398,4 +398,8 @@ monitorable = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy_detector"]
 shape = SubResource( 28 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 88, -24 )
+current = true
+
 [connection signal="area_entered" from="Enemy_detector" to="." method="_on_Enemy_detector_area_entered"]
