@@ -1,5 +1,5 @@
 extends KinematicBody2D
-
+const PauseScreen = preload("res://scenes/pause_menu2.tscn")
 var velocity = Vector2()
 var SPEED = 200
 var GRAVITY=10
@@ -56,8 +56,14 @@ func _physics_process(delta):
 		
 
 		
-func calculate_stomp_velocity(velocity, impulse: float):
+func calculate_stomp_velocity(velocity, impulse: float): #ESTO NO HACE NADA
 	pass
+
+func _unhandled_input(event):
+	if event.is_action_pressed("Pause"):
+		var pause_menu = PauseScreen.instance()
+		add_child(pause_menu)
+			
 	
 
 

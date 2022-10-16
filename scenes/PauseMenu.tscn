@@ -1,0 +1,101 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://resources/tema.tres" type="Theme" id=1]
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends Control
+
+
+
+var is_paused= false setget set_is_paused
+
+func _unhandled_input(event):
+	if event.is_action_pressed(\"Pause\"):
+		self.is_paused = !is_paused 
+
+func set_is_paused(value):
+	is_paused = value
+	get_tree().paused=is_paused
+	visible = is_paused
+# Declare member  variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+func _on_ResumeBtn_pressed():
+	self.is_paused = false
+	
+func _on_QuitBtn_pressed():
+	get_tree().quit()
+"
+
+[sub_resource type="Animation" id=1]
+resource_name = "Unpause"
+length = 0.001
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Unpause = SubResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 0.0196078, 0.0196078, 0 )
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Background/CenterContainer"]
+margin_right = 256.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 256, 144 )
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Background/CenterContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 249.0
+margin_bottom = 137.0
+custom_constants/margin_right = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Background/CenterContainer/PanelContainer/MarginContainer"]
+margin_left = 8.0
+margin_right = 234.0
+margin_bottom = 122.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Background/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 226.0
+margin_bottom = 31.0
+text = "PAUSE
+"
+align = 1
+valign = 1
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/Background/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 35.0
+margin_right = 226.0
+margin_bottom = 39.0
+
+[node name="Resume" type="Button" parent="CanvasLayer/Background/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 43.0
+margin_right = 226.0
+margin_bottom = 80.0
+size_flags_vertical = 3
+text = "Resume"
+
+[node name="Quit" type="Button" parent="CanvasLayer/Background/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 84.0
+margin_right = 226.0
+margin_bottom = 122.0
+size_flags_vertical = 3
+text = "Quit"

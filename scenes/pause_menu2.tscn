@@ -1,0 +1,93 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://resources/tema.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/pause_menu2.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.317647 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends Label
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[node name="pause_menu2" type="CanvasLayer"]
+pause_mode = 2
+layer = 128
+script = ExtResource( 3 )
+
+[node name="Overlay" type="PanelContainer" parent="."]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="Pausemenucontainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="PanelContainer" type="PanelContainer" parent="Pausemenucontainer"]
+margin_left = 88.0
+margin_top = 32.0
+margin_right = 167.0
+margin_bottom = 112.0
+custom_styles/panel = SubResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Pausemenucontainer/PanelContainer"]
+margin_right = 79.0
+margin_bottom = 80.0
+theme = ExtResource( 1 )
+custom_constants/margin_right = 5
+custom_constants/margin_top = 5
+custom_constants/margin_left = 5
+custom_constants/margin_bottom = 5
+
+[node name="Rows" type="VBoxContainer" parent="Pausemenucontainer/PanelContainer/MarginContainer"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 74.0
+margin_bottom = 75.0
+
+[node name="pausetitle" type="Label" parent="Pausemenucontainer/PanelContainer/MarginContainer/Rows"]
+margin_right = 69.0
+margin_bottom = 14.0
+text = "Paused"
+align = 1
+script = SubResource( 3 )
+
+[node name="HSeparator" type="HSeparator" parent="Pausemenucontainer/PanelContainer/MarginContainer/Rows"]
+margin_top = 18.0
+margin_right = 69.0
+margin_bottom = 22.0
+
+[node name="Resume" type="Button" parent="Pausemenucontainer/PanelContainer/MarginContainer/Rows"]
+margin_top = 26.0
+margin_right = 69.0
+margin_bottom = 46.0
+text = "Resume"
+
+[node name="Main_Menu" type="Button" parent="Pausemenucontainer/PanelContainer/MarginContainer/Rows"]
+margin_top = 50.0
+margin_right = 69.0
+margin_bottom = 70.0
+text = "Main Menu"
+
+[connection signal="pressed" from="Pausemenucontainer/PanelContainer/MarginContainer/Rows/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="Pausemenucontainer/PanelContainer/MarginContainer/Rows/Main_Menu" to="." method="_on_Main_Menu_pressed"]
+[connection signal="pressed" from="Pausemenucontainer/PanelContainer/MarginContainer/Rows/Main_Menu" to="." method="_on_Quit_pressed"]
