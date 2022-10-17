@@ -32,11 +32,6 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "StateMachine",
 "language": "GDScript",
-"path": "res://scenes/StateMachine/StateMachine.gd"
-}, {
-"base": "Node",
-"class": "StateMachine2",
-"language": "GDScript",
 "path": "res://scenes/StateMachine/StateMachine2.gd"
 } ]
 _global_script_class_icons={
@@ -44,8 +39,7 @@ _global_script_class_icons={
 "PlayerR": "",
 "PlayerState2": "",
 "State": "",
-"StateMachine": "",
-"StateMachine2": ""
+"StateMachine": ""
 }
 
 [application]

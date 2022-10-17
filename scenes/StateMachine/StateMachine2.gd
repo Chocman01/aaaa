@@ -1,6 +1,6 @@
 extends Node
 
-class_name StateMachine2
+class_name StateMachine
 # Step 4
 # Generic state machine.  Initializes states and delegates engine callbacks
 # (_physics_process, _unhandled_input, etc.) to the active state (idle, walk, etc.)

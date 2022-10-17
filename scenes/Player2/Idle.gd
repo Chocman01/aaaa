@@ -13,7 +13,7 @@ func exit() -> void:
 	
 	
 # Overrides the function you see in State.gd
-func physics_update(delta: float) -> void:
+func physics_update(delta: float):
 
 	if not playerr.is_on_floor():
 		if playerr.velocity.y > 0:

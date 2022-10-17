@@ -6,7 +6,7 @@ class_name State
 # methods, meaning we will override them in ourstate nodes (idle, walk, fall, etc.)
 
 # We store a reference to the state machine so that we can call its "transition_to()" method directly
-var state_machine = null
+var state_machine= null
 
 
 # Virtual function. Receives events from the `_unhandled_input()` callback in StateMachine.
