@@ -6,7 +6,7 @@
 [ext_resource path="res://scenes/malo.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/mapmove.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/mapmove2.tscn" type="PackedScene" id=6]
-[ext_resource path="res://sprites/platformer_metroidvania asset pack v1.01/tiles and background_foreground (new)/waterfall_anim_strip_4.png" type="Texture" id=7]
+[ext_resource path="res://sprites/platformer_metroidvania asset pack v1.01/tiles and background_foreground (new)/bg_2.png" type="Texture" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -201,6 +201,23 @@ position = Vector2( 120, 56 )
 scale = Vector2( 1.14583, 1.04375 )
 texture = ExtResource( 3 )
 
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -156.75, 56 )
+scale = Vector2( 1.17291, 1.04375 )
+texture = ExtResource( 3 )
+
+[node name="Sprite5" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 252, 221.75 )
+scale = Vector2( 4.56667, 1.07188 )
+texture = ExtResource( 3 )
+flip_v = true
+
+[node name="Sprite6" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 272, -112 )
+scale = Vector2( 4.56667, 1.07188 )
+texture = ExtResource( 3 )
+flip_v = true
+
 [node name="Sprite2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 392, 56 )
 scale = Vector2( 1.14583, 1.04375 )
@@ -215,6 +232,12 @@ texture = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
 
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 264, 272 )
+scale = Vector2( 2.06667, 1.75 )
+texture = ExtResource( 7 )
+flip_v = true
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
@@ -223,14 +246,6 @@ tile_data = PoolIntArray( 19, 0, 0, 20, 0, 131076, 21, 0, 1, 22, 0, 1, 23, 0, 2,
 
 [node name="mapmove" parent="." instance=ExtResource( 5 )]
 position = Vector2( 616, 104 )
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 304, 168 )
-scale = Vector2( 40, 11.2995 )
-z_index = -1
-texture = ExtResource( 7 )
-hframes = 4
-vframes = 4
 
 [node name="mapmove2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 240, 168 )

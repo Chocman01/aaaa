@@ -197,8 +197,8 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 2, 5, 0, 0, 6, 0, 131076, 7, 0, 131076,
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 220, 74 )
-scale = Vector2( 2.43333, 1.725 )
+position = Vector2( 220, 80 )
+scale = Vector2( 2.43333, 2.325 )
 texture = ExtResource( 2 )
 flip_v = true
 
